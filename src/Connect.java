@@ -74,8 +74,8 @@ public class Connect extends JFrame {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				// TODO Auto-generated method stub
-				String query = tfSql.getText();
-				String URL = tfURL.getText();
+				String query = tfSql.getText().trim();
+				String URL = tfURL.getText().trim();
 				loadTable(URL,query);
 			}
 		});
